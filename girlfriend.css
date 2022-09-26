@@ -1,0 +1,192 @@
+.container{
+    width: 100%;
+    height: 150%;
+    left: 0%;
+    top: 0%;
+    position: absolute;
+    background-color: rgb(238, 232, 232);
+}
+.parent_div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(241, 237, 237);
+}
+.nav{
+    width: 100%;
+    height: auto;
+    background-color: rgb(36, 56, 59);
+    position: fixed;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.navbar{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: flex-end;
+    color: white;
+    background-color: rgb(36, 56, 59);
+}
+.nav-link :hover {
+    background: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.nav-link{
+    width: 20%;
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+}
+.active a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4vh;
+}
+.child_div{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 13%;
+    border-radius: 10px;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+.subchild-div{
+    width: 45%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 0%;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.txt{
+    color: green;
+    padding-top: 0%;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 5vh;
+}
+.txt2{
+    color: rgb(35, 150, 35);
+    padding-top: 0%;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4vh;
+}
+.txt1{
+    font-weight: 400;
+    text-align: left;
+    margin-left: 10%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3vh;
+}
+.subchild-div1{
+    width: 45%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0%;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.overdose-pic{
+    width: 65%;
+    height: auto;
+}
+.audio1{
+    margin-left: 0%;
+    padding-top: 13%;
+    display: flex;
+}
+.music-down{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4vh;
+    margin-top: 2%;
+}
+
+
+
+
+
+@media only screen and (max-width: 700px){
+    .container{
+        width: 100%;
+        height: 180%;
+    }
+    .navbar{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        justify-content: flex-end;
+        color: white;
+     }
+    .nav-link{
+        width: 35%;
+        list-style-type: none;
+        display: flex;
+        text-align: center;
+    }
+    .active a{
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 3vh;
+    }
+    .subchild-div{
+        width: 90%;
+        margin-left: 6%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: transparent;
+    }
+    .child_div{
+        width: 90%;
+        flex-wrap: wrap;
+        margin-top: 30%;
+        flex-direction: row;
+        background-color: transparent;
+    }
+    .txt1{
+        text-align: left;
+        margin-left: 0%;
+    }
+    .subchild-div1{
+        width: 90%;
+        margin-left: 6%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: transparent;
+    }
+    .music-down{
+        font-size: 4vh;
+        margin-top: 2%;
+    }
+    .audio1{
+        margin-left: 0%;
+        padding-top: 5%;
+        display: flex;
+    }
+}
