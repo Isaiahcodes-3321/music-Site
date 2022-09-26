@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class=" logo">
+              <h1 class="txt">  BEST 9JA <br>
+               SONGS </h1>
+            </div>
+        
+            <nav class="navbar">
+                <ul class="nav-link">
+                    <li class="active"><a href="#"></a> More Musics</li>
+                    <li ><a href="#"></a> About us</li>
+                    <li ><a href="#"></a> Contact</li>
+                    <li><a href="burnaLastLastPage.html"></a></li>
+                    <div class="search">
+                        <input class="searchBox" type="search" value="" id="search" onchange="openPage()" placeholder="Search music">
+                        <button class="btnN" id="Search"> Search</button>
+                    </div>
+                  </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+        </div>
+
+        <div class="parentBox">
+            <div class="childbox">
+                <h1 class="txt1">  All About Our Site</h1>
+            </div>
+           
+            <div class="childbx1">
+                <img class="pic1" src="pic2.jpg" alt="">
+                <h1 class="txt2"> We bring you the best of all  <br> audible
+                     9Ja soungs, hip-pop, Afrobeat, <br>
+                     Afrobeats Shaku-Shaku and Wobe sound. <br>
+                    All mp3 audio are available on <br>
+                our site .<br>
+                 Stay with us as we bring you the <br>
+                  latest hit on board. <br>
+                  Click on the Menu bar to search for <br>
+                  your favourite music
+                 </h1>
+               <img class="pic2" src="pic1.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="top_music_box">
+            <div class="childbox2">
+                <h1 class="txt3"> Top 5 Songs </h1>
+            </div>
+            
+                <div class="childbox3">
+                    <div class="bxaudio">
+                        <h1 class="txt4"> Burna Boy It's plenty </h1>
+                        <a class="music-down" href="Burna_Boy_It_s_Plenty.mp3" download=""> 
+                            Download music</a>
+                        <audio controls class="audio1">
+                            <source src="Burna_Boy_It_s_Plenty.mp3" />
+                          </audio>
+                    </div>
+                    <div class="bxaudio">
+                        <h1 class="txt4"> Mavins Overdose </h1>
+                        <a class="music-down" href="Mavins_Overdose.mp3" download=""> 
+                            Download music</a>
+                        <audio controls class="audio1">
+                            <source src="Mavins_Overdose.mp3" />
+                          </audio>
+                    </div>
+                    <div class="bxaudio">
+                        <h1 class="txt4"> Rugar Girlfriend </h1>
+                        <a class="music-down" href="Ruger_-_Girlfriend.mp3" download=""> 
+                            Download music</a>
+                        <audio controls class="audio1">
+                            <source src="Ruger_-_Girlfriend.mp3" />
+                          </audio>
+                    </div>
+                    <div class="bxaudio">
+                        <h1 class="txt4"> Burna Boy Last Last </h1>
+                        <a class="music-down" href="Burna_Boy_Last_Last.mp3" download=""> 
+                            Download music</a>
+                        <audio controls class="audio1">
+                            <source src="Burna_Boy_Last_Last.mp3" />
+                          </audio>
+                    </div>
+           
+           
+                </div>
+                
+        </div>
+
+        <div class="search1">
+            <input class="searchBoX" type="search" value="" id="Search" onchange="OpenPage()" placeholder="Search music" >
+            <button class="btnn" id="Search"> Search</button>
+        </div>
+
+
+        <div class="txtarea">
+            <div>
+            <textarea class="cc" name="" id="" cols="30" rows="7" placeholder=" Make your comment here"></textarea>
+            </div>
+
+            <div>
+            <input class="btn" type="submit">
+            </div>
+        </div>
+       
+
+        <footer class="footer">
+            <a class="a" href="https://wa.me/+234 810 967 6572">
+              <i class="fa-brands fa-whatsapp"></i>
+              Whatsapp Chat 
+            </a>
+              <h1> Copyright   &#169;   2022 Program By Code_Master ( ISAIAH ) </h1> 
+        </footer>
+
+
+
+        
+        <script>
+            const menuBtn = document.querySelector('.fa-bars')
+            const navlink = document.querySelector('.nav-link')
+
+            menuBtn.addEventListener('click',()=>{
+                navlink.classList.toggle('mobile-menu')
+            })
+
+   
+           
+
+            // for my search bar
+            function openPage() {
+                var x = document.getElementById("search").value;
+                
+                if ( x.includes("overdose",0)) {
+                    window.open("overdosePage.html");
+                } else if ( x.includes("Overdose",0)) {
+                    window.open("overdosePage.html");
+                } 
+                else if ( x.includes("football",0)) {
+                    window.open("football.html");
+                } else if ( x.includes("Football",0)) {
+                    window.open("football.html");
+                } 
+
+                else if ( x.includes("Bandana",0)) {
+                    window.open("bandana.html");
+                }  else if ( x.includes("bandana",0)) {
+                    window.open("bandana.html");
+                }
+
+                else if ( x.includes("last ",0)) {
+                    window.open("burnaLastLastPage.html");
+                } else if ( x.includes("Last ",0)) {
+                    window.open("burnaLastLastPage.html");
+                } 
+
+                else if ( x.includes("Girlfriend",0)) {
+                    window.open("girlfriendPage.html");
+                } else if ( x.includes("girlfriend",0)) {
+                    window.open("girlfriendPage.html");
+                }
+
+                else if ( x.includes("plenty",0)) {
+                    window.open("itsPlentyPage.html");
+                } else if ( x.includes("Plenty",0)) {
+                    window.open("itsPlentyPage.html");
+                }
+
+               
+                
+               
+            }
+
+
+            // second search bar
+
+            function OpenPage() {
+                var v = document.getElementById("Search").value;
+                
+                if ( v.includes("overdose",0)) {
+                    window.open("overdosePage.html");
+                } else if ( v.includes("Overdose",0)) {
+                    window.open("overdosePage.html");
+                } 
+                else if ( v.includes("football",0)) {
+                    window.open("football.html");
+                } else if ( v.includes("Football",0)) {
+                    window.open("football.html");
+                } 
+
+                else if ( v.includes("Bandana",0)) {
+                    window.open("bandana.html");
+                }  else if ( v.includes("bandana",0)) {
+                    window.open("bandana.html");
+                }
+
+                else if ( v.includes("last ",0)) {
+                    window.open("burnaLastLastPage.html");
+                } else if ( v.includes("Last ",0)) {
+                    window.open("burnaLastLastPage.html");
+                } 
+
+                else if ( v.includes("Girlfriend",0)) {
+                    window.open("girlfriendPage.html");
+                } else if ( v.includes("girlfriend",0)) {
+                    window.open("girlfriendPage.html");
+                }
+
+                else if ( v.includes("plenty",0)) {
+                    window.open("itsPlentyPage.html");
+                } else if ( v.includes("Plenty",0)) {
+                    window.open("itsPlentyPage.html");
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
